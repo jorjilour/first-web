@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="keywords" content="Javascript, coding, quiz, JSON, JavaScript, Object,Notation, how to, code"/>
+		<meta name="description" content="Testing readers how much they know about JSON" />
+		<meta name="author" content="Jorjilou Reyes"/>
+		<title>Code Like a Pro - JSON Quiz</title>
+		<link href="styles/style.css" rel="stylesheet" />
+	
+		<!-- <link href="styles/topic.css" rel="stylesheet" /> -->
+		<!-- <link href="styles/index.css" rel="stylesheet" /> -->
+	</head>
+	
+	<body>
+		<div id="header_nav">
+			<header>
+				<img src="images/site_logo_small.jpg" alt="json logo" height="200" width="200"/>
+				<h1 class="h1colon">{</h1>
+				<h1 id="text"> CODE LIKE A PRO </h1>
+				<h1 class="h1colon">}</h1>		
+				<hr />
+
+			</header>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="topic.html">JSON like a PRO</a></li>
+					<li><a href="quiz.html">Quiz your PRO skills</a></li>
+					<li><a href="enhancements.html">Enhancements</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<section id="quizform">
+			<h2>Test Your JSON PRO skills!</h2>
+
+			<p>Find out how much you know about JSON by completing the mini test below. Good Luck!</p>
+
+			<form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+				<fieldset>
+					<legend>JSON QUIZ</legend>
+
+					<fieldset>
+						<legend>Student Details</legend>
+						<p>
+							<label for="firstname">Given Name</label> 
+							<input type="text" name= "firstname" id="firstname" pattern="^[a-zA-Z]+$" maxlength="15" required="required"/>
+						</p>
+						<p>
+							<label for="lastname">Family Name</label> 
+							<input type="text" name= "lastname" id="lastname" pattern="^[a-zA-Z]+$" required="required"/>
+						</p>
+						
+						<p><label for="studentid" title="Enter 7-10 digit student number">Student ID</label> 
+							<input type="text" name= "studentid" id="studentid" pattern="\d{7,10}" maxlength="10" required="required"/>
+						</p>					
+						
+					</fieldset>
+					<fieldset>
+						<legend>Question 1</legend>
+						<p><label for="q1">Who registered and standardized the domain www.json.org?</label></p>
+						<p><input type="text" name= "q1" id="q1" maxlength="30" size="30" required="required"/></p>
+					</fieldset>
+					<fieldset>
+						<legend>Question 2</legend>
+						<label>Each name/value pairs in a JSON data object is separated by:</label> 
+						<p>
+							<input type="radio" id="comma" name="symbol" value="comma"/>
+							<label for="comma">, comma</label>
+						</p>
+						<p>
+							<input type="radio" id="semicolon" name="symbol" value="semicolon"/>
+							<label for="semicolon">; semi-colon</label> 
+						</p>
+						<p>
+							<input type="radio" id="space" name="symbol" value="space"/>
+							<label for="space">&#34; &#34; whitespace</label>
+						</p>
+						<p>
+							<input type="radio" id="newline" name="symbol" value="newline"/>
+							<label for="newline">&#34;\n&#34; new line</label>
+						</p>
+						<p>
+							<input type="radio" id="curly" name="symbol" value="curly"/>
+							<label for="curly">{ } curly braces</label>
+						</p>
+					</fieldset>
+
+					<fieldset>
+						<legend>Question 3</legend>
+						<p><label>Select the <strong>correct</strong> statements about JSON's features</label></p>
+
+						<p>
+							<input type="checkbox" id="ft1" name="ft1" value="lang_indep" checked="checked"/>
+							<label for="ft1">JSON is language-independent and can be read and parsed by 
+								any programming language.
+							</label> 
+						</p>
+						<p>
+							<input type="checkbox" id="ft2" name="ft2" value="nestable" />
+							<label for="ft2">An <em>object</em> can be nested as a value inside another 
+								<em>object</em></label> 
+						</p>
+						<p>
+							<input type="checkbox" id="ft3" name="ft3" value="discoverer" />
+							<label for="ft3">Douglas Crockford was the first to discover, conceptualise and
+								implement JSON.
+							</label> 
+						</p>
+						<p>
+							<input type="checkbox" id="ft4" name="ft4" value="easy_deliverer" />
+							<label for="ft4">JSON can easily send data to &#38; from a server</label>
+						</p>
+						<p>
+							<input type="checkbox" id="ft5" name="ft5" value="complicated" />
+							<label for="ft5">JSON has complicated structures and is hard for humans to read</label> 
+						</p>
+
+					</fieldset>
+
+					<fieldset>
+						<legend>Question 4</legend>
+						<p>
+							<label for="valid_vals">Which of the following is <strong>NOT</strong> a possible value in the name/value
+								pair(s) of a JSON object</label>
+						</p>
+						<p>
+							<select name="valid_vals" id="valid_vals" required="required">
+								<option value="" selected="selected">Please Select</option>			
+								<option value="no">Number</option>
+								<option value="obj">Object</option>
+								<option value="array">Array</option>
+								<option value="img">Image</option>
+								<option value="null">NULL</option>
+								<option value="bool">Boolean</option>
+							</select>
+						</p>
+						
+					</fieldset>
+
+					<fieldset>
+						<legend>Question 5</legend>
+						<p><label for="year">What year was JSON started to popularise?</label></p>
+						<p><input type="number" id="year" name="year" min="1990" max="2020" value="2020"></p>
+					</fieldset>
+				</fieldset>			
+	
+				<input type= "submit" value="Submit"/>
+				<input type= "reset" value="Restart Quiz"/>
+			</form>
+		</section>
+        
+		
+    <!--FOOTER-->
+		<footer>
+			<section id="author">
+			<h4>Author</h4>
+			<p><a id="authoremail" href="mailto:103013357@student.swin.edu.au">Jorjilou Reyes</a></p>
+			</section>
+			<section id="references">
+			<h4>References</h4>
+			<h5>Images: </h5>
+			<ol>
+				<li><a href="https://www.canva.com/">Canva</a></li>
+				<li><a href="https://www.google.com/imghp">Google Images</a></li>
+			</ol>
+			<h5>Information:</h5>
+			<ol>
+				<li>
+				<a href="https://www.w3schools.com/whatis/whatis_json.asp">W3Schools</a>
+				</li>
+				<li>
+				<a href="https://en.wikipedia.org/wiki/JSON">Wikipedia</a>
+				</li>
+				<li>
+				<a href="https://www.tutorialspoint.com/json/json_overview.htm">
+				Tutorials Point
+				</a>
+				</li>
+				<li><a href="https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html">
+				TwoBit History</a>
+				</li>
+				<li>
+				<a href="https://blog.sqlizer.io/posts/json-history/">SQLizer Blog</a>
+				</li>
+				<li>
+				<a href="https://www.json.org/json-en.html">json.org</a>
+				</li>
+				<li>
+				<a href="https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/">
+				Copter Labs
+				</a>
+				</li>
+				<li>
+				<a href="https://www.guru99.com/json-vs-xml-difference.html">Guru 99</a>
+				</li>
+			</ol>
+			</section>
+		</footer>
+	</body>
+</html>
