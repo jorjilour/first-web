@@ -1,0 +1,26 @@
+/*
+    filename: style.css
+    author: Jorjilou Reyes
+    created: 17/08/2020
+    last modified: 31/08/2020 
+    description: index.html; topic.html; enhancements.html
+*/
+
+* {
+    font-family: Calibri, Helvetica, sans-serif;
+    color: #303D4D;
+}
+
+h1 {
+    font-size: xx-large;
+    display: inline-block;
+}
+
+.h1colon {
+    color: #E6D3A3
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+}

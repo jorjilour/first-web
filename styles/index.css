@@ -1,0 +1,43 @@
+/*
+    filename: index.css -> lab03.html
+    author: Jorjilou Reyes
+    created: 17/08/2020
+    last modified: 17/08/2020 
+    description: index.html 
+*/
+
+* {
+    font-family: Calibri, Helvetica, sans-serif;
+    color: #2F4F4F;
+    
+}
+
+
+
+h1 {
+    display: inline-block;
+    color: gray;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.h1colon {
+    color: khaki;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.2em 0.6em;
+    border: 4px solid khaki;
+    font-size: medium;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+}
