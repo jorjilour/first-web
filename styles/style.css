@@ -8,62 +8,302 @@
 
 * {
     font-family: Calibri, Helvetica, sans-serif;
-    color: #303D4D;
+    background-color: #303D4D;
+}
+
+body, article, section {
+    background-color:white;  
 }
 
 #header_nav {
-    background-color: #E6D3A3;
-    background-size: auto;
+    background-color: #303D4D;
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
 }
 
+/*setting background color of header and menu to blue gray*/
+header, nav, nav ul, h1, #pagetitle{
+    background-color: #303D4D;
+}
+
+/*sets h1 and nav as an inline instead of block*/
+header{
+    display: inline-block;
+}
+
+
+/*displaying h1 using font selector*/
 h1 {
-    display: inline-block;
-    color:white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 4em;
-    font-weight: bold;
+    display: inline;
+    font: normal small-caps bolder 80px/120px
+        'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1em 0.2em;
+    color:#E6D3A3;
+    text-align: left;
 }
 
+#pagetitle {
+    /* float: left; */
+    display: inline;
+}
+/*set colons in header as white*/
 .h1colon {
-    color: #303D4D;
+    color: white;
 }
 
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 0.2em 0.6em;
-    border: 4px solid khaki;
-    color: #E6D3A3;
-    font-size: large;
-}
-
-#about {
-    background-color: #E6D3A3;
-    margin: 1%;
-    padding: 1% 2%;
-    width: 30%;
-    font-size: 20px;
-    line-height: 30px;
+header img {
     float: left;
 }
 
-#right_image {
-    margin: 1%;
-    width: 50%;
+#menu {
+    width:100%;
+    margin: 2em auto;
+    clear: both;
+}
+    
+nav ul {
+    list-style: none;
+    height:4em;
+    display: block;
+}
+
+nav ul li, nav ul li a {
+    background-color: #E6D3A3;
+    display: inline-block;
+    margin: 0.5em;
+    padding: 0.2em 0.1em;
+    border: 4px solid #E6D3A3;
+    color: #303d4d;
+    font-size: large;
+}
+
+/*article selectors*/
+.topic_sect>figure>img {
+    max-width: 100%;
+    width: auto\9;
+    height: auto;
+}
+
+#pagecontent ul li a{
+    background-color: rgba(48, 61, 77,0);
+    color: whitesmoke;
+}
+
+
+#pagecontent {
+    border: 6px double #303D4D;
+    font: small-caps bold 30px/50px sans-serif;
+    background-color: rgba(232, 210, 153, 1);
     float: right;
+    width: 25%;
+    height: auto;
+    padding: 0.3em;
+    margin: 5em 1em auto 0.1em;
 }
 
-#right_image > img {
-    height: ;
-    width: ;
+#pagecontent h3 {
+    text-align: center;
+    font-size: 35px;
 }
 
+#pagecontent ul {
+    list-style: none;
+    color: white;
+}
+
+#pagecontent ul li{
+    margin-top: 3em;
+}
+
+#topic_article {
+    margin: 0.5em;
+    padding: 0.5em 0.5em;
+    float: left;
+    width: 65%;
+}
+
+.topic_sect{
+    margin: 1em auto;
+}
+
+article > h2, #quizform>h2 {
+    background-color: white;
+    color: #E6D3A3;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: 1em;
+}
+
+#about, #about>p, #about>h3, #right_image {
+    background-color: #E6D3A3;
+    color: #303D4D;
+    font-weight: bolder;
+}
+
+#about>h3 {
+    color: white;
+    font-variant: small-caps;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+section, aside{
+    border: 1px solid black;
+}
+
+/* #about, #right_image {
+    display: table-cell;
+} */
+
+#about {
+    margin: 1em;
+    padding: 1em 1em;
+    width: auto\9;
+    height: auto;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+#right_image {
+    margin: 1em;
+    width: auto\9;
+    height: auto;
+    width:20%;
+    max-width: 50%;
+}
+.topic_sect>figure>img {
+    max-width: 100%;
+    width: auto\9;
+    height: auto;
+}
+
+#learnbutton, #learnbutton>p, #learnbutton * a {
+    background-color: #E0B341;
+}
+
+#learnbutton {
+    width: 30%;
+    margin:auto;
+    color: white;
+    /* margin: 0.5em; */
+    padding: 0.5em;
+    clear: both;
+    text-align: center;
+    font: small-caps bolder 2em sans-serif;
+}
+
+
+aside#learnbutton p a{
+    color: white;
+}
+
+/*TOPIC.HTML SPECIFIC SELECTORS*/
+#topic_article, input, select{
+    background-color: white;
+}
+
+.topic_sect {
+    padding: 1em;
+}
+
+.topic_sect, .topic_sect>h3,
+.topic_sect>h4, .topic_sect>p,
+.topic_sect>ol, caption,code, 
+figcaption,figure, sup, sup>a,
+label
+{
+    background-color: rgba(240, 213, 146, 0.7);
+}
+
+/*MAKE transparent*/
+em, strong, code
+ol, ul, li,
+h3, h4, p{
+    background-color: rgba(240, 213, 146, 0);
+}
+
+#origins>blockquote{
+    background-color: rgba(82, 104, 135, 30);
+    color: white;
+    padding:0.6em;
+}
+
+
+
+
+
+/*TABLE*/
+table, figure>img{
+    margin:auto;
+}
+
+
+/*border*/
+tr,td,th{
+    border: 2px solid rgba(240, 213, 146, 1);
+}
+
+th{
+    background-color: #DAA520;
+}
+
+tr,td {
+    background-color:#E5C062;
+}
+
+/* #comparingtable>tr,td {
+    background-color: rgba(240, 213, 146, 1);
+} */
+/*end of table*/
+
+
+.question {
+    background-color: #E6D3A3;
+}
+
+fieldset {
+    margin: 1em 0.2em;
+}
+legend {
+    background-color: #ffefc7;
+    border: 2px outset white;
+}
+
+/*setting footer to center and small font*/
 footer {
+    background-color:rgba(245, 222, 179, 0.7);
+    color: #303D4D;
+    width:100%;
     clear: both;
     text-align: center;
     font-size: small;
     border-top: 4px double darkgray;
+    margin-top:1em;
+}
+
+footer>section>h4, footer>section>h5{
+    background-color:rgba(245, 222, 179, 0.7);
+    color: #303D4D;
+}
+
+
+/*set footer section background*/
+#author,#author>p, #author>p>a,
+#references, #references>ol, #references>ol>li{
+    background-color:rgba(245, 222, 179, 0.7);
+}
+
+#references>ol>li>a:hover{
+    color: white;
+}
+#references>ol>li>a:link, #author>p>a:link {
+    color:blue;
+    background-color: wheat;
+
+}
+#references>ol>li>a:visited{
+    color: plum;
 }

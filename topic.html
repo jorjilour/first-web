@@ -16,32 +16,33 @@
 
   <body>
 
-    <div id="header_nav">
-      <!--HEADER-->
-      <header>
-        <img src="images/site_logo_small.jpg" alt="json logo" height="200" width="200" />
-        
-        <h1 class="h1colon">{</h1>
-        <h1 id="text"> CODE LIKE A PRO </h1>
-        <h1 class="h1colon">}</h1>
-      </header>
+		<div id="header_nav">
+			<header>
+				<img src="images/site_logo_small.jpg" alt="json logo" height="200" width="200"/>
+				
+				<div id="pagetitle">
+					<h1 class="h1colon">{</h1>
+					<h1 id="text"> CODE LIKE A PRO </h1>
+					<h1 class="h1colon">}</h1>
+				</div>
 
-      <!--MENU-->
-      <nav id="menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="topic.html">JSON like a PRO</a></li>
-          <li><a href="quiz.html">Quiz your PRO skills</a></li>
-          <li><a href="enhancements.html">Enhancements</a></li>
-        </ul>
-      </nav>
-    </div>
+			</header>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="topic.html">JSON like a PRO</a></li>
+					<li><a href="quiz.html">Quiz your PRO skills</a></li>
+					<li><a href="enhancements.html">Enhancements</a></li>
+				</ul>
+			</nav>
+		</div>
 
     <!--ARTICLE-->
-    <article id="article">
+    <article id="topic_article">
       <h2 id="h2index">JavaScript Object Notation (JSON)</h2>
       
-      <section id="definition">
+      <section id="definition" class="topic_sect">
         <h3>JSON Definition and its Purpose</h3>
 
         <p>
@@ -56,12 +57,12 @@
 
         <figure>
           <figcaption>An Example of data-storing using JSON</figcaption>
-          <img src="images/ExampleJSON2.png" alt="data storing in JSON">
+          <img src="images/ExampleJSON2.png" alt="data storing in JSON" width="485" height="303">
         </figure>
 
       </section>
 
-      <section id="origins">
+      <section id="origins" class="topic_sect">
         <h3>The JSON Saga</h3>
 
         <h4>JSON's Origin</h4>
@@ -96,7 +97,7 @@
 
         <h4> Why JSON?</h4>
 
-        <h5>JSON Features</h5>
+        <h4>JSON Features</h4>
 
         <ul>
           <li>
@@ -124,7 +125,7 @@
 
       </section>
 
-      <section id="future">
+      <section id="future" class="topic_sect">
 
         <h3>JSON's Growth and Future</h3>
 
@@ -149,7 +150,7 @@
 
       </section>
 
-      <section id="comparing">
+      <section id="comparing" class="topic_sect">
 
         <h3>Comparing JSON to its Alternatives</h3>
         
@@ -172,8 +173,8 @@
         <p>In this section, JSON will be compared with XML.</p>
         <table id ="comparing_table">
           <caption>Similarities and differences between XML and JSON</caption>
-            <thead>
-              <tr>
+          <thead>
+            <tr>
                 <th colspan="2">
                   XML vs JSON
                 </th>
@@ -209,7 +210,7 @@
 
         </table>
 
-        <h4>How is JSON better?</h4>
+        <h3>How is JSON better?</h3>
         <ul>
           <li>JSON is less verbose and faster</li>
           <li>XML uses more words to describe the intention (Memory Consumption)</li>
@@ -241,7 +242,7 @@
       </section>
 
 
-      <section id="syntax">
+      <section id="syntax" class="topic_sect">
         <h3>Basic Syntax</h3>
 
         <p>JSON is built on two structures. A collection of data in JSON format may contain: </p>
@@ -283,7 +284,7 @@
     </article>
 
     <!--ASIDE-->
-    <aside>
+    <aside id="pagecontent">
       <h3>Page Content</h3>
       <ul>
         <li><a href="topic.html#definition">JSON Definition and Purpose</a></li>
@@ -298,44 +299,49 @@
     <footer>
       <section id="author">
         <h4>Author</h4>
-        <p><a id="authoremail" href="mailto:103013357@student.swin.edu.au">Jorjilou Reyes</a></p>
+        <p><a id="authoremail" href="mailto:103013357@student.swin.edu.au" target="_blank">
+              Jorjilou Reyes
+          </a>
+        </p>
       </section>
       <section id="references">
         <h4>References</h4>
         <h5>Images: </h5>
         <ol>
-          <li><a href="https://www.canva.com/">Canva</a></li>
-          <li><a href="https://www.google.com/imghp">Google Images</a></li>
+          <li><a href="https://www.canva.com/" target="_blank">Canva</a></li>
+          <li><a href="https://www.google.com/imghp" target="_blank">Google Images</a></li>
         </ol>
         <h5>Information:</h5>
         <ol>
           <li>
-          <a href="https://www.w3schools.com/whatis/whatis_json.asp">W3Schools</a>
+            <a href="https://www.w3schools.com/whatis/whatis_json.asp" target="_blank">
+            W3Schools
+            </a>
           </li>
           <li>
-          <a href="https://en.wikipedia.org/wiki/JSON">Wikipedia</a>
+          <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">Wikipedia</a>
           </li>
           <li>
-          <a href="https://www.tutorialspoint.com/json/json_overview.htm">
+          <a href="https://www.tutorialspoint.com/json/json_overview.htm" target="_blank">
           Tutorials Point
           </a>
           </li>
-          <li><a href="https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html">
+          <li><a href="https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html" target="_blank">
           TwoBit History</a>
           </li>
           <li>
-          <a href="https://blog.sqlizer.io/posts/json-history/">SQLizer Blog</a>
+          <a href="https://blog.sqlizer.io/posts/json-history/" target="_blank">SQLizer Blog</a>
           </li>
           <li>
-          <a href="https://www.json.org/json-en.html">json.org</a>
+          <a href="https://www.json.org/json-en.html" target="_blank">json.org</a>
           </li>
           <li>
-          <a href="https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/">
+          <a href="https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/" target="_blank">
           Copter Labs
           </a>
           </li>
           <li>
-          <a href="https://www.guru99.com/json-vs-xml-difference.html">Guru 99</a>
+          <a href="https://www.guru99.com/json-vs-xml-difference.html" target="_blank">Guru 99</a>
           </li>
         </ol>
       </section>
