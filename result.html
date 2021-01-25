@@ -1,20 +1,23 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta name="keywords" content="Javascript, coding, quiz, JSON, JavaScript, Object,Notation, how to, code" />
-    <meta name="description" content="Details the enhancements made to the website in HTML and CSS in order to improve structure or design" />
+    <meta name="description" content="Displays the information received from quiz and the results" />
     <meta name="author" content="Jorjilou Reyes" />
-    <title>Code Like a Pro - Enhancements</title>
+    <title>Code Like a Pro - Quiz Results</title>
     <link href="styles/style.css" rel="stylesheet" />
+    <script src="scripts/quiz.js"></script>
+    <script src="scripts/enhancements.js"></script>
+
 </head>
 
 <body>
     <div id="header_nav">
         <header>
-            <!-- <img src="images/site_logo_small.jpg" alt="json logo" height="200" width="200"/>-->
-
+            <!--BACKGROUND GRAPHICS IN STYLE SCRIPT-->
         </header>
 
         <nav id="menu">
@@ -22,38 +25,41 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="topic.html">JSON like a PRO</a></li>
                 <li><a href="quiz.html">Quiz your PRO skills</a></li>
-                <li><a href="enhancements.html">HTML Enhancements</a></li>
-                <li><a href="enhancements2.html">JSON Enhancements</a></li>
-                <li><a href="enhancements3.html">PHP Enhancements</a></li>
+                <li><a href="enhancements.html">Enhancements</a></li>
+                <li><a href="enhancements2.html">Enhancements 2</a></li>
             </ul>
         </nav>
     </div>
 
-    <article id="enhancements">
-        <h1>Enhancements</h1>
-        <section id="enhancement1">
-            <h3><a href="quiz.html#clock">The Clock</a></h3>
-            <p>This clock uses the HTML tag, <code>&#60;canvas&#62;</code> where it allows you to display shapes. Additionally, javascript code was added to make the of the clock and animate it. This was copied from
-                <a href="http://w3schools-fa.ir/graphics/canvas_clock_start.html" target="_blank">w3schools tutorial</a>
-            </p>
-        </section>
+    <form id="results">
+        <fieldset>
+            <legend>Good Job!</legend>
 
-        <section id="enhancement2">
-            <h3><a href="index.html#references">The Dropdown Button</a></h3>
-            <p>The Dropdown Button hides the list of references in the footer section in order to save space and make website more interactive. The code needed to implement this is a simple button and is modified in the CSS stylesheet. This is copied from
-                <a href="http://w3schools-fa.ir/css/css_dropdowns.html" target="_blank">w3schools tutorial</a> as well.
+            <fieldset id="res_details">
+                <legend>Student Details</legend>
+                <p>Name: <span id="confirm_name"></span></p>
+                <p>Student Id: <span id="confirm_id"></span></p>
+            </fieldset>
 
-            </p>
-        </section>
-    </article>
+            <fieldset id="res_score">
+                <legend>Your Results</legend>
+                <p>Score: <input type="text" id="score" size="2" readonly="true" />
+                </p>
+                <p>Number of Attempts: <input id="confirm_attempts" size="2" readonly="true" /></p>
+                <input type="hidden" name="attempts" id="attempts" />
+            </fieldset>
+
+            <button type="button" id="retakeButton">Retake Quiz</button>
+        </fieldset>
+    </form>
 
     <!--FOOTER-->
     <footer>
         <section id="author">
             <h3>Author</h3>
             <p><a id="authoremail" href="mailto:103013357@student.swin.edu.au" target="_blank">
-						Jorjilou Reyes
-					</a>
+                Jorjilou Reyes
+            </a>
             </p>
         </section>
         <section id="references">
@@ -67,19 +73,19 @@
             <ol>
                 <li>
                     <a href="https://www.w3schools.com/whatis/whatis_json.asp" target="_blank">
-					  W3Schools
-					  </a>
+              W3Schools
+              </a>
                 </li>
                 <li>
                     <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">Wikipedia</a>
                 </li>
                 <li>
                     <a href="https://www.tutorialspoint.com/json/json_overview.htm" target="_blank">
-					Tutorials Point
-					</a>
+            Tutorials Point
+            </a>
                 </li>
                 <li><a href="https://twobithistory.org/2017/09/21/the-rise-and-rise-of-json.html" target="_blank">
-					TwoBit History</a>
+            TwoBit History</a>
                 </li>
                 <li>
                     <a href="https://blog.sqlizer.io/posts/json-history/" target="_blank">SQLizer Blog</a>
@@ -89,8 +95,8 @@
                 </li>
                 <li>
                     <a href="https://www.copterlabs.com/json-what-it-is-how-it-works-how-to-use-it/" target="_blank">
-					Copter Labs
-					</a>
+            Copter Labs
+            </a>
                 </li>
                 <li>
                     <a href="https://www.guru99.com/json-vs-xml-difference.html" target="_blank">Guru 99</a>
@@ -98,7 +104,6 @@
             </ol>
         </section>
     </footer>
-
 
 </body>
 

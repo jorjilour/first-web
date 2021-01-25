@@ -9,13 +9,18 @@
 * {
     font-family: Calibri, Helvetica, sans-serif;
     background-color: #303D4D;
+    /* border: 1px solid black; */
 }
 
-body, article, section {
-    background-color:white;  
+body,
+article,
+section {
+    background-color: #303D4D;
+    color: #303D4D;
 }
 
 #header_nav {
+    /* background: url("images/siteheader.png"); */
     background-color: #303D4D;
     width: 100%;
     min-width: 100%;
@@ -23,54 +28,43 @@ body, article, section {
     padding-bottom: 2em;
 }
 
+header {
+    background-image: url("images/codelikeapro2.png");
+    background-repeat: no-repeat;
+    background-size: 1280px 374px;
+    width: 100%;
+    min-width: 100px;
+    height: 374px;
+    margin: auto;
+}
+
+
 /*setting background color of header and menu to blue gray*/
-header, nav, nav ul, h1, #pagetitle{
+
+header,
+nav,
+nav ul {
     background-color: #303D4D;
 }
 
-/*sets h1 and nav as an inline instead of block*/
-header{
-    display: inline-block;
-}
 
-
-/*displaying h1 using font selector*/
-h1 {
-    display: inline;
-    font: normal small-caps bolder 80px/120px
-        'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
-        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 1em 0.2em;
-    color:#E6D3A3;
-    text-align: left;
-}
-
-#pagetitle {
-    /* float: left; */
-    display: inline;
-}
-/*set colons in header as white*/
-.h1colon {
-    color: white;
-}
-
-header img {
-    float: left;
-}
+/*menu or navigation bar*/
 
 #menu {
-    width:100%;
+    width: 100%;
     margin: 2em auto;
     clear: both;
+    text-align: center;
 }
-    
+
 nav ul {
     list-style: none;
-    height:4em;
+    height: 4em;
     display: block;
 }
 
-nav ul li, nav ul li a {
+nav ul li,
+nav ul li a {
     background-color: #E6D3A3;
     display: inline-block;
     margin: 0.5em;
@@ -80,18 +74,22 @@ nav ul li, nav ul li a {
     font-size: large;
 }
 
+
 /*article selectors*/
+
+
+/*set images so that they resize when window resizes*/
+
 .topic_sect>figure>img {
     max-width: 100%;
-    width: auto\9;
+    width: auto;
     height: auto;
 }
 
-#pagecontent ul li a{
-    background-color: rgba(48, 61, 77,0);
+#pagecontent ul li a {
+    background-color: transparent;
     color: whitesmoke;
 }
-
 
 #pagecontent {
     border: 6px double #303D4D;
@@ -104,7 +102,7 @@ nav ul li, nav ul li a {
     margin: 5em 1em auto 0.1em;
 }
 
-#pagecontent h3 {
+#pagecontent h2 {
     text-align: center;
     font-size: 35px;
 }
@@ -114,7 +112,7 @@ nav ul li, nav ul li a {
     color: white;
 }
 
-#pagecontent ul li{
+#pagecontent ul li {
     margin-top: 3em;
 }
 
@@ -125,68 +123,56 @@ nav ul li, nav ul li a {
     width: 65%;
 }
 
-.topic_sect{
+.topic_sect {
     margin: 1em auto;
 }
 
-article > h2, #quizform>h2 {
-    background-color: white;
+h1 {
+    background-color: transparent;
     color: #E6D3A3;
     font-size: 40px;
     font-weight: 700;
     margin-left: 1em;
 }
 
-#about, #about>p, #about>h3, #right_image {
+#about,
+#about>p,
+#about>h2 {
     background-color: #E6D3A3;
-    color: #303D4D;
     font-weight: bolder;
 }
 
-#about>h3 {
+#about>h2 {
     color: white;
     font-variant: small-caps;
     font-size: 40px;
     font-weight: bold;
 }
 
-section, aside{
-    border: 1px solid black;
-}
-
-/* #about, #right_image {
-    display: table-cell;
-} */
-
 #about {
     margin: 1em;
     padding: 1em 1em;
-    width: auto\9;
+    width: auto;
     height: auto;
     font-size: 20px;
     line-height: 50px;
 }
 
-#right_image {
-    margin: 1em;
-    width: auto\9;
-    height: auto;
-    width:20%;
-    max-width: 50%;
-}
 .topic_sect>figure>img {
     max-width: 100%;
-    width: auto\9;
+    width: auto;
     height: auto;
 }
 
-#learnbutton, #learnbutton>p, #learnbutton * a {
+#learnbutton,
+#learnbutton>p,
+#learnbutton * a {
     background-color: #E0B341;
 }
 
 #learnbutton {
     width: 30%;
-    margin:auto;
+    margin: auto;
     color: white;
     /* margin: 0.5em; */
     padding: 0.5em;
@@ -195,70 +181,101 @@ section, aside{
     font: small-caps bolder 2em sans-serif;
 }
 
-
-aside#learnbutton p a{
+aside#learnbutton p a {
     color: white;
 }
 
+
 /*TOPIC.HTML SPECIFIC SELECTORS*/
-#topic_article, input, select{
-    background-color: white;
+
+#topic_article,
+input,
+select,
+#retakeButton {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .topic_sect {
     padding: 1em;
 }
 
-.topic_sect, .topic_sect>h3,
-.topic_sect>h4, .topic_sect>p,
+
+/*gives a yellow background for each section in topic.html*/
+
+
+/* .topic_sect, .topic_sect>h2, .topic_sect>h4,
+.topic_sect>h3, .topic_sect>p,
 .topic_sect>ol, caption,code, 
 figcaption,figure, sup, sup>a,
 label
 {
-    background-color: rgba(240, 213, 146, 0.7);
-}
+    background-color: rgba(240, 213, 146, 1.0);
+} */
+
 
 /*MAKE transparent*/
-em, strong, code
-ol, ul, li,
-h3, h4, p{
-    background-color: rgba(240, 213, 146, 0);
+
+em,
+strong,
+ol,
+li,
+ul,
+h2,
+h3,
+h4,
+h5,
+p,
+code,
+label {
+    background-color: transparent;
 }
 
-#origins>blockquote{
+.topic_sect,
+.topic_sect caption,
+.topic_sect figcaption,
+.topic_sect caption .topic_sect code,
+.topic_sect sup,
+sup>a,
+.topic_sect figure,
+.topic_sect label {
+    background-color: rgba(240, 213, 146, 1.0);
+}
+
+#origins>blockquote {
     background-color: rgba(82, 104, 135, 30);
     color: white;
-    padding:0.6em;
+    padding: 0.6em;
 }
-
-
-
 
 
 /*TABLE*/
-table, figure>img{
-    margin:auto;
+
+table,
+figure>img {
+    margin: auto;
 }
 
 
 /*border*/
-tr,td,th{
+
+#comparing_table tr,
+#comparing_table td,
+#comparing_table th {
     border: 2px solid rgba(240, 213, 146, 1);
+    padding: 0.2em 0.5em;
 }
 
-th{
+#comparing_table th {
     background-color: #DAA520;
 }
 
-tr,td {
-    background-color:#E5C062;
+#comparing_table #comparing_table tr,
+#comparing_table td {
+    background-color: #E5C062;
 }
 
-/* #comparingtable>tr,td {
-    background-color: rgba(240, 213, 146, 1);
-} */
-/*end of table*/
 
+/*end of table*/
 
 .question {
     background-color: #E6D3A3;
@@ -267,43 +284,243 @@ tr,td {
 fieldset {
     margin: 1em 0.2em;
 }
+
 legend {
     background-color: #ffefc7;
     border: 2px outset white;
 }
 
+#enhancements section {
+    background-color: #E6D3A3;
+    margin: 1em 1em;
+    padding: 1em;
+}
+
+#enhancements section h2 a,
+#enhancement1 h2,
+#enhancement2 h2,
+#enhancement1 p,
+#enhancement2 p,
+#enhancement1 p a,
+#enhancement2 p a {
+    background-color: #E6D3A3;
+}
+
+
 /*setting footer to center and small font*/
+
 footer {
-    background-color:rgba(245, 222, 179, 0.7);
+    background-color: rgb(245, 222, 179);
     color: #303D4D;
-    width:100%;
+    width: 100%;
     clear: both;
     text-align: center;
     font-size: small;
     border-top: 4px double darkgray;
-    margin-top:1em;
-}
-
-footer>section>h4, footer>section>h5{
-    background-color:rgba(245, 222, 179, 0.7);
-    color: #303D4D;
+    margin-top: 1em;
 }
 
 
 /*set footer section background*/
-#author,#author>p, #author>p>a,
-#references, #references>ol, #references>ol>li{
-    background-color:rgba(245, 222, 179, 0.7);
+
+footer h3,
+footer h4,
+#author,
+#author>p,
+#author a,
+#references,
+#references>ol,
+#references>ol>li {
+    background-color: rgb(245, 222, 179);
 }
 
-#references>ol>li>a:hover{
+
+/**LINKS**/
+
+#references>ol>li>a:hover {
     color: white;
 }
-#references>ol>li>a:link, #author>p>a:link {
-    color:blue;
-    background-color: wheat;
 
+#references a:link,
+#author p a:link {
+    color: blue;
+    background-color: rgb(245, 222, 179);
 }
-#references>ol>li>a:visited{
+
+#references a:visited {
     color: plum;
+}
+
+#enhancements h2:link {
+    background-color: #E6D3A3;
+    color: white;
+}
+
+
+/**JSON QUIZ SECT STYLE**/
+
+canvas {
+    margin: auto;
+}
+
+#clock {
+    background-color: #303D4D;
+    align-self: center;
+}
+
+#timer_block {
+    width: 300px;
+    height: 100%;
+    border: 2px solid white;
+    display: inline-block;
+    font-size: large;
+}
+
+#timer2 {
+    color: #303D4D;
+    font-weight: bolder;
+    margin: auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+#quizStartButton {
+    background-color: #DAA520;
+    text-align: center;
+    color: #303D4D;
+    padding: 0.5em;
+    font-size: 30px;
+}
+
+#jsonquiz {
+    color: #303D4D;
+    width: 70%;
+    margin-top: 1em;
+    float: left;
+}
+
+#preQuiz {
+    text-align: center;
+}
+
+.paras {
+    font-size: 150px;
+    font-weight: bold;
+}
+
+#preQuiz>h1 {
+    text-align: left;
+    font-size: 52px;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+    font-size: large;
+    padding: 2px;
+}
+
+
+/*sets background to dark gray blue*/
+
+#quizbody,
+#quizform {
+    background-color: #303D4D;
+}
+
+#quizform option {
+    background-color: #DAA520;
+}
+
+#quizbody p {
+    background-color: transparent;
+    text-indent: 1em;
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Style The Dropdown Button */
+
+.dropbtn {
+    background-color: #E5C062;
+    color: white;
+    padding: 16px;
+    font-size: small;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.ref_dropdown {
+    background-color: #E6D3A3;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    min-height: fit-content;
+}
+
+.ref_dropdown ul {
+    list-style: none;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: wheat;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu on hover */
+
+.ref_dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.ref_dropdown:hover .dropbtn {
+    background-color: #E0B341;
+}
+
+
+/* Results page */
+
+#results fieldset,
+#results span {
+    background-color: #E6D3A3;
+    color: #303D4D;
+}
+
+#results legend {
+    background-color: #303D4D;
+    color: #E6D3A3;
+    padding: 3px;
 }
